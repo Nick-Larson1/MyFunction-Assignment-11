@@ -1,0 +1,16 @@
+---
+title: "Temp Analysis"
+author: "Nicholas Larson"
+date: "2024-04-23"
+output: pdf_document
+---
+
+```{r}
+library(NicholasLarsonFirstPackage)   # load TestPackage, which includes MaxTemp data frame.
+library(ggplot2)
+
+ggplot(MaxTemp, aes(x=Date, y=MaxTemp)) +
+  geom_line()
+```
+
+We see that the daily max temperature in Flagstaff varies quite a lot.
